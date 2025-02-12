@@ -1,0 +1,126 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Myntra Clone - Online Fashion Shopping</title>
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/header.css">
+  <link rel="stylesheet" href="styles/products.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="50" height="50">
+        <path fill="#FF3F6C" d="M50 150c0-27.6 22.4-50 50-50h312c27.6 0 50 22.4 50 50v212c0 27.6-22.4 50-50 50H100c-27.6 0-50-22.4-50-50V150z"/>
+        <path fill="white" d="M282.5 212h-53l-26.5 88h53z"/>
+      </svg>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#">MEN</a></li>
+        <li><a href="#">WOMEN</a></li>
+        <li><a href="#">KIDS</a></li>
+        <li><a href="#">HOME & LIVING</a></li>
+        <li><a href="#">BEAUTY</a></li>
+      </ul>
+    </nav>
+    <div class="search">
+      <i class="fas fa-search"></i>
+      <input type="text" placeholder="Search for products, brands and more">
+    </div>
+    <div class="user-actions">
+      <div class="action">
+        <i class="far fa-user"></i>
+        <span>Profile</span>
+      </div>
+      <div class="action">
+        <i class="far fa-heart"></i>
+        <span>Wishlist</span>
+      </div>
+      <div class="action">
+        <i class="fas fa-shopping-bag"></i>
+        <span>Bag</span>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <h1>BIGGEST DEALS ON TOP BRANDS</h1>
+        <button class="shop-now">Shop Now</button>
+      </div>
+    </section>
+
+    <section class="deals">
+      <h2>DEALS OF THE DAY</h2>
+      <div class="deals-grid" id="dealsContainer">
+        <!-- Deals will be loaded dynamically -->
+      </div>
+    </section>
+
+    <section class="products">
+      <h2>TRENDING NOW</h2>
+      <div class="filters">
+        <select id="categoryFilter">
+          <option value="">All Categories</option>
+          <option value="men">Men</option>
+          <option value="women">Women</option>
+          <option value="kids">Kids</option>
+        </select>
+        <select id="priceFilter">
+          <option value="">Price Range</option>
+          <option value="0-500">Under ₹500</option>
+          <option value="501-1000">₹501 - ₹1000</option>
+          <option value="1001-2000">₹1001 - ₹2000</option>
+          <option value="2001+">Above ₹2000</option>
+        </select>
+      </div>
+      <div class="products-grid" id="productsContainer">
+        <!-- Products will be loaded dynamically -->
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>ONLINE SHOPPING</h3>
+        <ul>
+          <li><a href="#">Men</a></li>
+          <li><a href="#">Women</a></li>
+          <li><a href="#">Kids</a></li>
+          <li><a href="#">Home & Living</a></li>
+          <li><a href="#">Beauty</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>CUSTOMER POLICIES</h3>
+        <ul>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">T&C</a></li>
+          <li><a href="#">Terms Of Use</a></li>
+          <li><a href="#">Track Orders</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>EXPERIENCE MYNTRA APP ON MOBILE</h3>
+        <div class="app-downloads">
+          <a href="#" class="app-button">
+            <i class="fab fa-google-play"></i>
+            GET IT ON GOOGLE PLAY
+          </a>
+          <a href="#" class="app-button">
+            <i class="fab fa-apple"></i>
+            DOWNLOAD ON APP STORE
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
